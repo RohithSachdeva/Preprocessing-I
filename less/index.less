@@ -3,6 +3,15 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans|Roboto|Squada+One&display=swap');
+
+
+/*font-family: 'Odibee Sans', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Squada One', cursive;*/
+
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,11 +58,191 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+@body-font:'Roboto', sans-serif;
+@body-size: 2rem;
+@background:#FFA07A;
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+.bodystyle() {
+	font-family: @body-font;
+	border: solid black 1px;
+	font-size: @body-size;
+	text-align: left;
+	width: 40%;
+	padding:2rem;
+	background-color: @background;
+}
+
+html, body {
+	width: 90%;
+	height: 100%;
+	margin-left: 5%;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5%;
+	a {
+		text-decoration: none;
+		color:black;
+		font-family: 'Squada One', cursive;
+
+	}
+} 
+
+.top-section {
+display: flex;
+flex-direction: column;
+margin-top:5%;
+margin-right: 5%;
+background-color:#D2B48C;
+
+}
+
+.intro{
+
+	h1 {
+font-size: 4rem;
+text-align: center;
+margin-bottom: 3%;
+margin-left: 2%;
+margin-right: 2%;
+	}
+}
+
+.james {
+	margin-left: 40%;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+
+.sideproject{
+	display:flex;
+	flex-direction: column;
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.buttonplace {
+	display:flex;
+	justify-content: center;
+	margin-top: 3%;
+
+	button{
+		width:10rem;
+  background-color:#F5FFFA;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  height: auto;
+  font-size: 2rem;
+  border-radius: 10px;
+  color:black;
+	}
+	button:hover{
+		background-color: lime;
+	}
+	a{
+		text-decoration: none;
+		color:black;
+	}
+}
+}
+
+.middle-section{
+display: flex;
+justify-content: space-between;
+margin-top: 3%;
+}
+
+.lorem {
+	.bodystyle();
+	height: 40%;
+	
+}
+
+.attributes {
+	.bodystyle();
+	margin-right: 2.8rem;
+	
+	ol, li {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin:.3rem 1rem .5rem 1rem;
+	}
+	
+}
+
+.bottom-section {
+	margin-top: 3%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 90%;
+
+
+div{
+	display: flex;
+	flex-direction: column;
+	border: 1px dotted red;
+	.bodystyle();
+	background-color: white;
+	margin:2%;
+	text-align: center;
+}
+
+.footer{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;;
+}
+}
+
+/* Mobile Styling */
+
+@media (max-width: 500px) {
+.james{
+	margin-left: 25%;
+}
+.lorem {
+	font-size: 1rem;
+	height: 20%;
+}
+.attributes {
+	font-size: 1rem;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	padding:auto;
+
+}
+.bottom-section{
+	display: flex;
+	div{
+		width:25%;
+		font-size: 12px;
+		text-align: left;
+		
+	}
+}
+}

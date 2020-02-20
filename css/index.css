@@ -1,1 +1,311 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Odibee Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Odibee Sans Regular'), local('OdibeeSans-Regular'), url(https://fonts.gstatic.com/s/odibeesans/v1/neIPzCSooYAho6WvjeToRbk1cJU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Squada One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Squada One'), local('SquadaOne-Regular'), url(https://fonts.gstatic.com/s/squadaone/v8/BCasqZ8XsOrx4mcOk6Mtaac2XA.ttf) format('truetype');
+}
+/*font-family: 'Odibee Sans', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Squada One', cursive;*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Squada One', cursive;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-right: 5%;
+  background-color: #D2B48C;
+}
+.intro h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.james {
+  margin-left: 40%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+.sideproject {
+  display: flex;
+  flex-direction: column;
+}
+.sideproject h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.sideproject .buttonplace {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+.sideproject .buttonplace button {
+  width: 10rem;
+  background-color: #F5FFFA;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  height: auto;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: black;
+}
+.sideproject .buttonplace button:hover {
+  background-color: lime;
+}
+.sideproject .buttonplace a {
+  text-decoration: none;
+  color: black;
+}
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+.lorem {
+  font-family: 'Roboto', sans-serif;
+  border: solid black 1px;
+  font-size: 2rem;
+  text-align: left;
+  width: 40%;
+  padding: 2rem;
+  background-color: #FFA07A;
+  height: 40%;
+}
+.attributes {
+  font-family: 'Roboto', sans-serif;
+  border: solid black 1px;
+  font-size: 2rem;
+  text-align: left;
+  width: 40%;
+  padding: 2rem;
+  background-color: #FFA07A;
+  margin-right: 2.8rem;
+}
+.attributes ol,
+.attributes li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0.3rem 1rem 0.5rem 1rem;
+}
+.bottom-section {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+.bottom-section div {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted red;
+  font-family: 'Roboto', sans-serif;
+  border: solid black 1px;
+  font-size: 2rem;
+  text-align: left;
+  width: 40%;
+  padding: 2rem;
+  background-color: #FFA07A;
+  background-color: white;
+  margin: 2%;
+  text-align: center;
+}
+.bottom-section .footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Mobile Styling */
+@media (max-width: 500px) {
+  .james {
+    margin-left: 25%;
+  }
+  .lorem {
+    font-size: 1rem;
+    height: 20%;
+  }
+  .attributes {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: auto;
+  }
+  .bottom-section {
+    display: flex;
+  }
+  .bottom-section div {
+    width: 25%;
+    font-size: 12px;
+    text-align: left;
+  }
+}

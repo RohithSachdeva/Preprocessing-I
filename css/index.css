@@ -165,7 +165,7 @@ h1 {
 }
 .navigation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 5%;
 }
 .navigation a {
@@ -180,9 +180,12 @@ h1 {
   margin-right: 5%;
   background-color: lightgrey;
 }
-.intro img {
-  vertical-align: middle;
-}
 .intro h1 {
   font-size: 50px;
+  text-align: center;
+}
+.james {
+  margin-left: 40%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }

@@ -59,15 +59,30 @@ table {
 
 /* Set every element's box-sizing to border-box */
 
-
-
+@body-font:'Roboto', sans-serif;
+@body-size: 2rem;
+@background:#FFA07A;
 
 * {
     box-sizing: border-box;
 }
 
 
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.bodystyle() {
+	font-family: @body-font;
+	border: solid black 1px;
+	font-size: @body-size;
+	text-align: left;
+	width: 40%;
+	padding:2rem;
+	background-color: @background;
+}
 
 html, body {
 	width: 90%;
@@ -96,15 +111,18 @@ display: flex;
 flex-direction: column;
 margin-top:5%;
 margin-right: 5%;
-background-color: lightgrey;
+background-color:#D2B48C;
 
 }
 
 .intro{
 
 	h1 {
-font-size: 50px;
+font-size: 4rem;
 text-align: center;
+margin-bottom: 3%;
+margin-left: 2%;
+margin-right: 2%;
 	}
 }
 
@@ -115,5 +133,68 @@ text-align: center;
 }
 
 .sideproject{
+	display:flex;
+	flex-direction: column;
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.buttonplace {
+	display:flex;
+	justify-content: center;
+	margin-top: 3%;
+
+	button{
+		width:20%;
+  background-color:#F5FFFA;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  height: auto;
+  font-size: 2rem;
+  border-radius: 10px;
+  color:black;
+	}
+	button:hover{
+		background-color: lime;
+	}
+}
+}
+
+.middle-section{
+display: flex;
+justify-content: space-between;
+margin-top: 3%;
+}
+
+.lorem {
+	.bodystyle();
+	
+}
+
+.attributes {
+	.bodystyle();
+	margin-right: 2.8rem;
+	
+	ol, li {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin:.3rem 1rem .5rem 1rem;
+	}
+	
+}
+
+.bottom-section {
+	margin-top: 3%;
+display: flex;
+justify-content: space-around;
+
+div{
+	border: 1px dotted red;
+	.bodystyle();
+	background-color: white;
+}
 
 }
